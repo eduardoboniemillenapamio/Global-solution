@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="members.html">Integrantes</a>
+        <a href="courses.html" class="active"> Cursos</a>
+    </nav>
+        <h1>Escolha um curso para saber mais</h1>
+    </header>
+    <section class="course-list">
+        <div class="course-card" data-course-id="1">
+            <img src="imagens/ia.png" alt="imagem do curso selecionado">
+            <img src="https://via.placeholder.com/300x200" alt="Curso de IA">
+            <h3>IA no Mercado de Trabalho: Desafios e Oportunidades</h3>
+            <p>Explore como a Inteligência Artificial está impactando o mercado de trabalho.</p>
+            <button class="view-details">Ver Detalhes</button>
+        </div>
+
+        <div class="course-card" data-course-id="2">
+             <img src="imagens/desafios.png" alt="imagem do curso selecionado">
+            <img src="https://via.placeholder.com/300x200" alt="Curso de Tecnologia">
+            <h3>Desafios e Avanços da Tecnologia no Século XXI</h3>
+            <p>Descubra os principais avanços tecnológicos e os desafios no mundo moderno.</p>
+            <button class="view-details">Ver Detalhes</button>
+        </div>
+
+        <div class="course-card" data-course-id="3">
+            <img src="imagens/ia.png" alt="imagem do curso selecionado">
+            <img src="https://via.placeholder.com/300x200" alt="Curso de IA">
+            <h3>Curso Rápido de Inteligência Artificial</h3>
+            <p>Aprenda os conceitos básicos de IA em um formato rápido e eficiente.</p>
+            <button class="view-details">Ver Detalhes</button>
+        </div>
+
+        <div class="course-card" data-course-id="4">
+            <img src="imagens/reinventar.png" alt="imagem do curso selecionado">
+            <img src="https://via.placeholder.com/300x200" alt="Curso de Inovação">
+            <h3>Como se Reinventar no Cenário das Inovações</h3>
+            <p>Saiba como se adaptar e inovar no cenário das rápidas mudanças tecnológicas.</p>
+            <button class="view-details">Ver Detalhes</button>
+        </div>
+    </section>
+
+    <div class="modal" id="courseModal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Detalhes do Curso</h2>
+            <p id="modalDescription">Descrição do curso...</p>
+            <button id="closeModal">Fechar</button>
+        </div>
+    </div>
+    
+    <footer>
+    <p>Global solution.</p>
+  </footer>
+
+    <script src="js/script.js">
+    const toggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      navbar.classList.toggle('active');
+    });
+    </script>
+</body>
+</html>

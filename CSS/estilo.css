@@ -1,0 +1,613 @@
+:root {
+    --main-color: rgb(138, 159, 166);
+    --black: #13131a;
+    --bg: rgb(26, 79, 99);
+    --border: 0.1rem solid #000;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: var(--bg);
+    overflow-x: hidden;
+}
+
+section {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
+header .logo img {
+    height: 60px;
+    width: auto;
+}
+
+.navbar {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: #000;
+    position: relative;
+    font-weight: 600;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 0.2rem solid var(--main-color);
+    padding-bottom: 0.3rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+.btn {
+    background: var(--main-color);
+    color: #000;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.home-container {
+    background: url("../imagens/bgindex.png");
+    min-height: calc(100vh - 90px);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.content {
+    max-width: 60rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.content h3 {
+    color: #000;
+    font-size: 6rem;
+}
+
+.content p {
+    color: #000;
+    font-size: 2rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.tittle {
+    margin-top: 120px;
+    font-size: 5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about {
+    padding-top: 140px;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .row img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.about .row .content {
+    flex: 1 1 400px;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-top: 1rem;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #000;
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+}
+
+.faq h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+}
+
+.faq .forma {
+    width: 100%;
+    max-width: 800px;
+}
+
+details {
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+summary {
+    background: rgb(46, 157, 197);
+    padding: 1.2rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+details[open] summary {
+    background: rgb(76, 185, 224);
+}
+
+details p {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.contato {
+    padding-top: 140px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 1rem 6rem;
+    min-height: calc(100vh - 90px);
+}
+
+.contato-container {
+    background: rgb(76, 185, 224);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contato-titulo {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.label-contato {
+    display: block;
+    font-weight: 600;
+    margin: 0.5rem 0 0.3rem;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.input-contato,
+.textarea-contato,
+.botao-contato {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
+
+.textarea-contato {
+    resize: none;
+    height: 120px;
+}
+
+.botao-contato {
+    background: var(--main-color);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-contato:hover {
+    background: rgb(0, 62, 122);
+}
+
+.members-section {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.members-section h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: #000;
+}
+
+.members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.members img {
+    max-width: 160px;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+}
+
+.info {
+    text-align: left;
+    max-width: 400px;
+}
+
+.botao-members-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botao-members {
+    background: rgb(79, 84, 89);
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    transition: 0.3s ease, transform 0.2s ease;
+}
+
+.botao-members:hover {
+    background: rgb(0, 62, 122);
+    transform: translateY(-2px);
+}
+
+footer {
+    background: rgb(76, 185, 224);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.6rem;
+    color: #000;
+    margin-top: auto;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 28px;
+    height: 3px;
+    background: #000;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+    background: var(--main-color);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+    background: var(--main-color);
+}
+
+@media (max-width: 992px) {
+    html { font-size: 9px; }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--bg);
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+        border-top: var(--border);
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+        animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-15px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .navbar a {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .members {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    html { font-size: 8.5px; }
+
+    .members img {
+        max-width: 120px;
+    }
+
+    .botao-members-container {
+        justify-content: center;
+    }
+
+    .contato-container {
+        width: 90%;
+    }
+
+    .tittle {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    html { font-size: 8px; }
+
+    .content h3 {
+        font-size: 3.5rem;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+    }
+
+    .contato-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    html { font-size: 11px; }
+
+    .content h3 {
+        font-size: 7rem;
+    }
+
+    .tittle {
+        font-size: 7rem;
+    }
+}
+
+
+.courses-section {
+    padding-top: 140px;
+    padding-bottom: 6rem;
+    background-color: #fff;
+}
+
+.courses-section h2 {
+    margin-top: 140px;
+    font-size: 4.5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 2rem;
+}
+
+.course-card {
+    padding-top: 140px;
+    margin-top: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.course-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.course-card p {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.course-card button {
+    background-color: var(--main-color);
+    color: #000;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: background-color 0.3s ease;
+}
+
+.course-card button:hover {
+    background-color: rgb(0, 62, 122);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px; 
+    width: 100%; 
+    text-align: center;
+}
+
+#modalTitle {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+#modalDescription {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+#closeModal {
+    background-color: var(--main-color);
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.6rem;
+    border-radius: 6px;
+}
+
+#closeModal:hover {
+    background-color: rgb(0, 62, 122);
+}
+
+@media (max-width: 768px) {
+    .courses-container {
+        justify-content: center;
+    }
+
+    .course-card {
+        width: 90%;
+    }
+
+    .courses-section h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .course-card {
+        width: 100%;
+    }
+}

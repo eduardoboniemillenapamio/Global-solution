@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Turma do Bem</title>
+  <link rel="stylesheet" href="CSS/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <section class="header-container">
+      <a href="index.html" class="logo">
+        <img src="imagens/logo.png" alt="Logo">
+      </a>
+
+      <div id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">Sobre</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="members.html">Integrantes</a>
+        <a href="courses.html">Cursos</a>
+      </nav>
+
+      <div class="icons">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/8a9fa6/search--v1.png"
+          alt="Ícone de busca" />
+      </div>
+    </section>
+  </header>
+
+  
+  <main class="main-content">
+    <section class="about" id="about">
+      <h1 class="tittle">Sobre nós</h1>
+      <div class="row">
+        <div class="image">
+          <img src="imagens/tecnologia.png" alt="redes de tecnologia">
+        </div>
+        <div class="content">
+          <h3>Sobre</h3>
+          <p>O mundo da tecnologia e da Inteligência Artificial (IA) está em constante evolução, e a demanda por
+            profissionais qualificados nunca foi tão alta. Pensando nisso, criamos um site inovador e
+            acessível, dedicado a oferecer cursos e qualificações de ponta nas áreas mais promissoras da tecnologia e da
+            IA. Estes cursos foram desenvolvidos com o objetivo de capacitar os funcionários para utilizarem
+            ferramentas e tecnologias emergentes, como IA, diretamente em suas funções
+            diárias. O treinamento vai além de conceitos técnicos, focando na aplicação prática dessas tecnologias para
+            solucionar problemas e otimizar processos internos.</p>
+
+          <h3>Tecnologias utilizadas</h3>
+          <p>O site foi desenvolvido utilizando HTML, CS e JS, com foco em simplicidade, leveza e fácil navegação. A
+            estrutura HTML organiza o conteúdo de forma clara e acessível, enquanto o CSS foi aplicado para definir o
+            estilo visual, cores e espaçamentos, garantindo aparencia agradável e coerente com a identidade do site.</p>
+
+          <h3>Roadmap do projeto</h3>
+          <p>O projeto começa com o planejamento, onde definimos os objetivos do site, levantamos requisitos funcionais
+            e não funcionais e identificamos o público-alvo. Em seguida, passamos para o design, criando o layout,
+            escolhendo cores, fontes e estilo, e desenvolvendo mockups e wireframes das telas principais. Na etapa de
+            estruturação, implementamos as páginas principais, como Home, Sobre, Tecnologias e Contato, organizando as
+            seções de forma clara e objetiva. O desenvolvimento front-end envolve a criação do HTML e CSS estruturado,
+            aplicando as definições visuais e inserindo os textos de forma a garantir uma navegação intuitiva e
+            eficiente.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ 
+  <footer>
+    <p>Global solution.</p>
+  </footer>
+
+  
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      navbar.classList.toggle('active');
+    });
+  </script>
+
+</body>
+
+</html>

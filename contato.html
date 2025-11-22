@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+  <title>Contato - GS</title>
+</head>
+<body>
+  <header class="header">
+    <section>
+      <a href="index.html" class="logo">
+        <img src="imagens/logo.png" alt="logo">
+      </a>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html" class="active">Contato</a>
+        <a href="members.html">Integrantes</a>
+        <a href="courses.html">Cursos</a>
+      </nav>
+      <div class="icons">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/8a9fa6/search--v1.png" alt="lupa" />
+      </div>
+    </section>
+  </header>
+
+  <section class="contato" id="contato">
+    <div class="contato-container">
+      <h2 class="contato-titulo">Entre em Contato</h2>
+      <form id="form-contato" class="form-contato" novalidate>
+        <label for="nome-contato" class="label-contato">Nome *</label>
+        <input type="text" id="nome-contato" name="nome" class="input-contato" required />
+
+        <label for="email-contato" class="label-contato">E-mail *</label>
+        <input type="email" id="email-contato" name="email" class="input-contato" required />
+
+        <label for="telefone-contato" class="label-contato">Telefone *</label>
+        <input type="tel" id="telefone-contato" name="telefone" class="input-contato" required />
+
+        <label class="label-contato">Você é:</label>
+        <div class="contato-tipo">
+          <label><input type="radio" name="tipo" value="Experiencia" required /> Possuo  conhecimento em IA </label>
+          <label><input type="radio" name="tipo" value="Experiencia" /> Não possuo  conhecimento em IA</label>
+        </div>
+
+        <label for="mensagem-contato" class="label-contato">Descreva sua experiencia com tecnologia</label>
+        <textarea id="mensagem-contato" name="mensagem" class="textarea-contato" required></textarea>
+
+        <button type="submit" class="botao-contato">Enviar</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Global solution.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      navbar.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

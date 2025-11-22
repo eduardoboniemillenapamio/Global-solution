@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>FAQ - GS</title>
+</head>
+<body>
+  <header class="header">
+    <section>
+      <a href="index.html" class="logo">
+        <img src="imagens/logo.png" alt="logo">
+      </a>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="members.html">Integrantes</a>
+        <a href="courses.html">Cursos</a>
+      </nav>
+
+      <div class="icons">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/8a9fa6/search--v1.png" alt="lupa" />
+      </div>
+    </section>
+  </header>
+
+  <section class="faq" id="faq">
+    <div class="forma">
+      <h1>FAQ</h1>
+
+      <details>
+        <summary>Qual a finalidade da plataforma?</summary>
+        <p>Qualificar funcionários para que sejam capazes de trabalhar junto com a Inteligência Artificial e facilitar os avanços tecnologicos. Bem como, agilizar as demandas diarias ja existentes. </p>
+      </details>
+      <details>
+        <summary>Como utilizar?</summary>
+        <p>Basta se inscrever nos cursos que ja foram selecionados de acordo com a area de atuacao e cada funcionario e completar as tarefas pedidas. </p>
+      </details>
+      <details>
+        <summary>Por que devo fazer os cursos?</summary>
+        <p>Pois eles são uma ótima ferramenta para aumentar a qualificacao profissional, adquirir mais familiaria coma IA e se reinventar diante dos cenários inovadores do atual século. </p>
+      </details>
+      <details>
+        <summary>Gera certificado?</summary>
+        <p>Sim, ao concluir o curso e atingir porcentagem igual ou superior a 60% no questionário final gerará um certificado.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <p>Global solution.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      navbar.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

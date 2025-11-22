@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integrantes - GS</title>
+  <link rel="stylesheet" href="CSS/estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <section>
+      <a href="index.html" class="logo">
+        <img src="imagens/logo.png" alt="Logo">
+      </a>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="members.html" class="active">Integrantes</a>
+        <a href="courses.html">Cursos</a>
+      </nav>
+
+      <div class="icons">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/8a9fa6/search--v1.png"
+          alt="ícone de pesquisa" />
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="members" class="members-section">
+      <h2 class="tittle">Integrantes</h2>
+
+      <div class="members">
+        <img src="imagens/Fotoeduardo.png" alt="Foto de Eduardo Boni dos Santos">
+        <div class="info">
+          <p><strong>Eduardo Boni dos Santos</strong> – RM 567236 - 1TDSPS</p>
+          <div class="botao-members-container">
+            <a href="https://github.com/bonieduardo75" target="_blank" class="botao-members">GitHub</a>
+            <a href="https://www.linkedin.com/in/eduardo-boni-b6b851310/" target="_blank"
+              class="botao-members">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="members">
+        <img src="imagens/fotomillena.jpeg" alt="Foto de Millena dos Santos Pamio">
+        <div class="info">
+          <p><strong>Millena dos Santos Pamio</strong> – RM 566664 - 1TDSPS</p>
+          <div class="botao-members-container">
+            <a href="https://github.com/rm566664" target="_blank" class="botao-members">GitHub</a>
+            <a href="https://www.linkedin.com/in/millenapamio" target="_blank"
+              class="botao-members">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Global solution.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      navbar.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>

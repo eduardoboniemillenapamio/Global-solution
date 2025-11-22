@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GS</title>
+
+  <link rel="stylesheet" href="CSS/estilo.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <section>
+      <a href="index.html" class="logo">
+        <img src="imagens/logo.png" alt="logo">
+      </a>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+
+      <nav class="navbar" id="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="members.html">Integrantes</a>
+        <a href="courses.html">Cursos</a>
+      </nav>
+
+
+      <div class="icons">
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/8a9fa6/search--v1.png" alt="lupa" />
+      </div>
+    </section>
+  </header>
+
+
+  <main>
+    <div class="home-container">
+      <section id="home">
+        <div class="content">
+          <h3>Humanos e IA</h3>
+          <p>
+            O mundo da tecnologia e da Inteligência Artificial (IA) está em constante evolução, e a demanda por
+            profissionais qualificados nunca foi tão alta. Pensando nisso, criamos um site inovador e
+            acessível, dedicado a oferecer cursos e qualificações de ponta nas áreas mais promissoras da tecnologia e da
+            IA.Nosso site foi desenvolvido para proporcionar uma experiência de aprendizado única e prática, focada nas
+            necessidades do mercado atual. Com cursos elaborados por especialistas, oferecemos uma plataforma intuitiva
+            e flexível, onde você pode aprender no seu ritmo, de qualquer lugar do mundo.
+          </p>
+          <a href="about.html" class="btn">Saber mais</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <footer>
+    <p>Global solution.</p>
+  </footer>
+
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      navbar.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
